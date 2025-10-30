@@ -29,5 +29,6 @@ def lecture05_01():
 
     # 書き込み処理
     # implement me
-    app.write_img("output_images/lecture05_01_k24105.png")
+    output_path = "output_images/lecture05_01_K24105.png"
+    cv2.imwrite(output_path, google_img)
 
