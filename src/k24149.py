@@ -7,13 +7,13 @@ def lecture05_01_k24149():
     # カメラキャプチャ実行
     app = MyVideoCapture()
     app.run()
+    capture_img = app.run()
     
 
     # 画像をローカル変数に保存
     google_img : cv2.Mat = cv2.imread('images/google.png')
     # capture_img : cv2.Mat = cv2.imread('images/camera_capture.png') # 動作テスト用なので提出時にこの行を消すこと
-    capture_img : cv2.Mat = cv2.imwrite('output_images/lecture05_01_k24149.png', capture_img)
-
+    
     g_hight, g_width, g_channel = google_img.shape
     c_hight, c_width, c_channel = capture_img.shape
     print(google_img.shape)
